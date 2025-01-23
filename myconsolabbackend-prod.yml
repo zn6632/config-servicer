@@ -3,6 +3,10 @@ server:
 spring:
   config:
     import: 'optional:configserver:http://localhost:8888'
+  boot:
+    admin:
+      client:
+        url: 'http://localhost:9090'
 
 management:
   endpoints:
@@ -12,3 +16,4 @@ management:
   endpoint:
     health:
       show-details: 'always'
+  
