@@ -2,18 +2,17 @@ server:
   port: 8080
 spring:
   config:
-    import: 'optional:configserver:http://localhost:8888'
+    import: optional:configserver:http://localhost:8888
   boot:
     admin:
       client:
-        url: 'http://localhost:9090'
+        url: http://localhost:9090
 
 management:
   endpoints:
     web:
       exposure:
-        include: '*'
+        include: *
   endpoint:
     health:
-      show-details: 'always'
-  
+      show-details: always
