@@ -18,3 +18,4 @@ management:
       show-details: 'always'
 microservice-one: 10
 microservice-deux: douma
+microservice-one
